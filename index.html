@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="myImage1" src="img/logo.svg" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline flex-grow-1 mr-4">
+                    <input class="form-control flex-grow-1 mr-sm-2" type="search"
+                        placeholder="Prova a cercare: lezioni di Laravel" aria-label="Search">
+                </form>
+
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#"><i class="fas fa-list-ul"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical "></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                </ul>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="sidebar-nav">
+            <ul class="nav flex-column mt-2">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#"><i class="fas fa-house mr-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="fa-solid fa-chart-simple mr-2"></i>Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="fas fa-signal mr-2"></i>Signal</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <section>
+            <div class="bg-primary ">
+                <div class="container-fluid py-3">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <span>Boolean</span>
+                            <span class="badge badge-pill myBadge">Success</span>
+
+
+                        </div>
+                        <div class="col-md-4">
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                        </div>
+                        <div class="col-md-4">
+
+                            <span>Nuovo studente</span>
+
+                            <button type="button" class="btn myFormButton" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-plus"></i></button>
+
+
+                            <div class="modal fade myCustom-modal" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="text-dark" for="validationTooltip01">NOME</label>
+                                                        <input type="text" class="form-control" id="validationTooltip01"
+                                                            required>
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="text-dark"
+                                                            for="validationTooltip02">COGNOME</label>
+                                                        <input type="text" class="form-control" id="validationTooltip02"
+                                                            placeholder="Last name" value="Otto" required>
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="text-dark"
+                                                            for="validationTooltipUsername">EMAIL</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"
+                                                                    id="validationTooltipUsernamePrepend">@</span>
+                                                            </div>
+                                                            <input type="text" class="form-control"
+                                                                id="validationTooltipUsername"
+                                                                aria-describedby="validationTooltipUsernamePrepend"
+                                                                required>
+                                                            <div class="invalid-tooltip">
+                                                                Please choose a unique and valid username.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="text-dark"
+                                                            for="validationTooltip03">PASSWORD</label>
+                                                        <input type="text" class="form-control" id="validationTooltip03"
+                                                            placeholder="City" required>
+                                                        <div class="invalid-tooltip text-dark">
+                                                            Please provide a valid city.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <label class="text-dark"
+                                                            for="validationTooltip03">INDIRIZZO</label>
+                                                        <input type="text" class="form-control" id="validationTooltip03"
+                                                            placeholder="City" required>
+                                                        <div class="invalid-tooltip text-dark">
+                                                            Please provide a valid city.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="text-dark" for="validationTooltip03">Città</label>
+                                                        <input type="text" class="form-control" id="validationTooltip03"
+                                                            placeholder="City" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid city.
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-3 mb-3">
+                                                        <label class="text-dark" for="inputState">Stato</label>
+                                                        <select id="inputState" class="form-control">
+                                                            <option selected>Italia</option>
+                                                            <option>Austria</option>
+                                                            <option>Germania</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label class="text-dark" for="validationTooltip05">Cap</label>
+                                                        <input type="text" class="form-control" id="validationTooltip05"
+                                                            placeholder="Zip" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid zip.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group text-dark">
+                                                            <label class="text-dark"
+                                                                for="exampleFormControlFile1">Foto</label>
+                                                            <input type="file" class="form-control-file text-dark"
+                                                                id="exampleFormControlFile1">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                                <button class="btn btn-primary" type="submit">salva</button>
+                                                <button type="button" class="btn btn-warning">svuota</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="badge badge-pill myBadge">3 app</span>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                            <span class="badge badge-pill myBadge">Boolean mobile app</span>
+                            <span class="badge badge-pill myBadge">Boolean web app</span>
+                            <span class="badge badge-pill myBadge">Boolean blog app</span>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>123</h3>
+                        </div>
+                        <div class="col-md-4"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="py-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header text-dark">
+                                    PROSSIME CLASSI
+                                </div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header text-dark">
+                                    F.A.Q
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p>
+                                            <a class="btn col-md-12 " data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                            <a class="btn col-md-12 " data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                            <a class="btn col-md-12 " data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                                <div class="card card-body text-dark">
+                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Quote
+                                </div>
+                                <div class="card-body">
+                                
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 420px;">
+                                <img class="card-img-top" src="img/stats.jpeg" alt="Card image cap">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

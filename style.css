@@ -1,0 +1,66 @@
+:root {
+    --header-height: 70px;
+    --navbar-width: 10rem;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    background: #222;
+    color: white;
+    margin: 0;  
+    padding: 0; 
+}
+
+header {
+    height: var(--header-height);
+    background: rgb(255, 255, 255);
+}
+
+main {
+    height: calc(100% - var(--header-height));
+    display: flex;
+}
+
+main > nav {
+    background: rgb(4, 0, 34);
+    height: 100%;
+    width: var(--navbar-width);
+    background-image: url('img/sidebar-bg.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+main > section {
+    flex-grow: 1; 
+    background: rgb(255, 255, 255);
+    overflow-y: scroll;
+}
+
+.myImage1 {
+    width: 8rem ;
+}
+
+.myBadge {
+    background-color: rgb(24, 24, 149);
+}
+
+.myFormButton {
+    border: 1px solid white;
+    color: white;
+}
+
+.myCustom-modal .modal-dialog {
+    max-width: 50%;          
+    height: 100vh;          
+    margin: 0 auto 0 50%;  
+}
+
+.myCustom-modal .modal-content {
+    height: 100%;          
+}
