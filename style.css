@@ -1,8 +1,8 @@
 :root {
-    --header-height: 70px;
-    --navbar-width: 10rem;
+    --header-height: 60px;
+    --navbar-width: 12rem;
 }
-
+ /* struttura */
 * {
     box-sizing: border-box; 
 }
@@ -41,15 +41,20 @@ main > section {
     background: rgb(255, 255, 255);
     overflow-y: scroll;
 }
+    /* css custom  */
+    /* header  nav custom  */
 
-.myImage1 {
-    width: 8rem ;
+.my_logo {
+    max-height: 3rem;
 }
 
+    /* badge custom container bg-primary  */
 .myBadge {
     background-color: rgb(24, 24, 149);
+    
+    
 }
-
+    /*form e button-form custom */
 .myFormButton {
     border: 1px solid white;
     color: white;
@@ -63,4 +68,24 @@ main > section {
 
 .myCustom-modal .modal-content {
     height: 100%;          
+}
+
+
+/* table */
+.myImgTable{
+    width: 1.5rem;
+}
+
+
+      /* css mediaquery  */
+
+@media (max-width: 768px) {
+    .myCustom-modal .modal-dialog {
+        max-width: 100%;
+        margin: 0;  
+    }
+
+    .myCustom-modal .modal-content {
+        height: auto;          
+    }
 }
